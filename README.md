@@ -1,6 +1,53 @@
 
 [aliyun设备接入](https://help.aliyun.com/zh/iot/getting-started/using-mqtt-fx-to-access-iot-platform?spm=a2c4g.11174283.0.0.6ff8b5811XrkjP)
 
+物模型
+[设备属性上报](https://help.aliyun.com/zh/iot/user-guide/device-properties-events-and-services?spm=a2c4g.11186623.0.0.76577cec5I6T4c#section-g4j-5zg-12b)
+`/sys/a2iFUuJvc94/esp32/thing/event/property/post`
+可简化上报数据
+```
+{
+    "params": {
+        "point": {
+            "value":288
+        }
+    }
+}
+```
+
+[获取期望属性值](https://help.aliyun.com/zh/iot/user-guide/desired-device-property-values?spm=a2c4g.11186623.0.0.35ed436ajbUKib)
+
+发布topic: `/sys/a2iFUuJvc94/esp32/thing/property/desired/get`
+数据:
+```
+{
+ "params" : [
+        "point"
+    ]
+}
+```
+
+[设置设备期望](SetDeviceDesiredProperty)
+云端调用更新
+
+~~使用消息转发实现上报属性时，更新属性期望~~
+
+[清空期望属性值](https://help.aliyun.com/zh/iot/user-guide/desired-device-property-values?spm=a2c4g.11186623.0.i30#section-kqt-y5y-zgb)
+
+`/sys/a2iFUuJvc94/esp32/thing/property/desired/delete`
+```
+{
+"params": {
+        "point":{}
+    },
+}
+```
+
+[获取属性快照QueryDevicePropertyStatus](https://help.aliyun.com/zh/iot/developer-reference/api-querydevicepropertystatus-2018-01-20?spm=a2c4g.11186623.0.i174)
+
+[物联网API调试](https://next.api.aliyun.com/api/Iot/2018-01-20/QueryDevicePropertyStatus?tab=DEBUG&params={%22DeviceName%22:%22esp32%22,%22ProductKey%22:%22a2iFUuJvc94%22})
+
+
 
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C6 | ESP32-H2 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- |
