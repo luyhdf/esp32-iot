@@ -3,3 +3,4 @@ sdkconfig_aliyun
 sdkconfig
 sdkconfig.old
 .vscode
+sdkconfig.example

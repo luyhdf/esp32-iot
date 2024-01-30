@@ -2,7 +2,7 @@ menu "Example Configuration"
 
     config BROKER_URI
         string "Broker URL"
-        default "MQTT://{ProductKey}.iot-as-mqtt.ap-{RegionId}.aliyuncs.com"
+        default "MQTT://{IoTCoreId}.iot.{Region}.baidubce.com"
         help
             URL of an mqtt broker which this example connects to.
 

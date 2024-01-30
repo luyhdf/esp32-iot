@@ -1,6 +1,8 @@
 
 [aliyun设备接入](https://help.aliyun.com/zh/iot/getting-started/using-mqtt-fx-to-access-iot-platform?spm=a2c4g.11174283.0.0.6ff8b5811XrkjP)
 
+[baiduyun 设备接入](https://cloud.baidu.com/doc/IoTCore/s/hk7omsfcl)
+
 
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C6 | ESP32-H2 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- |
