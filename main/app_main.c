@@ -97,9 +97,9 @@ static void mqtt_app_start(void)
 {
     const esp_mqtt_client_config_t mqtt_cfg = {
         .broker.address.uri = CONFIG_BROKER_URI,
-        .credentials.username = "esp32&a2iFUuJvc94",
-        .credentials.authentication.password="85a3241f0146f36caae2f838d9b218d34ed3ca1c5da1d83f94b8fe6958124e86",
-        .credentials.client_id = "a2iFUuJvc94.esp32|securemode=2,signmethod=hmacsha256,timestamp=1706497530247|",
+        .credentials.username = CONFIG_BROKER_USERNAME,
+        .credentials.authentication.password= CONFIG_BROKER_PASSWORD,
+        .credentials.client_id = CONFIG_BROKER_CLINT_ID,
     };
 
     ESP_LOGI(TAG, "[APP] Free memory: %" PRIu32 " bytes", esp_get_free_heap_size());

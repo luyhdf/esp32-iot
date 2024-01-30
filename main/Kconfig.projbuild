@@ -2,9 +2,21 @@ menu "Example Configuration"
 
     config BROKER_URI
         string "Broker URL"
-        default "wss://mqtt.eclipseprojects.io:443/mqtt"
+        default "MQTT://{ProductKey}.iot-as-mqtt.ap-{RegionId}.aliyuncs.com"
         help
             URL of an mqtt broker which this example connects to.
+
+    config BROKER_USERNAME
+        string "Broker Username"
+        default ""
+
+    config BROKER_PASSWORD
+        string "Broker Password"
+        default ""
+
+    config BROKER_CLINT_ID
+        string "Broker Clint ID"
+        default ""
 
     config BROKER_CERTIFICATE_OVERRIDE
         string "Server certificate override"
